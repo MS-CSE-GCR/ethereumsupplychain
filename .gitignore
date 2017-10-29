@@ -261,5 +261,7 @@ __pycache__/
 *.pyc
 
 #Producer
-Producer/ProducerIoTDevices/private.config
-private.config
+**/Producer/ProducerIoTDevices/private.config
+**/ProducerIoTDevices/private.config
+**/private.config
+*/private.config
