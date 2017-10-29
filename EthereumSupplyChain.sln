@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Producer", "Producer", "{7CDDA86B-D905-43AF-B6FD-8712ECBF9A12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shipping", "Shipping", "{6B608190-46D5-4283-93AE-648B600D4169}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Buyer", "Buyer", "{E533A7F8-0F23-4C92-9916-21B7F91794FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerIoTDevices", "Producer\ProducerIoTDevices\ProducerIoTDevices.csproj", "{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE} = {7CDDA86B-D905-43AF-B6FD-8712ECBF9A12}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
+	EndGlobalSection
+EndGlobal

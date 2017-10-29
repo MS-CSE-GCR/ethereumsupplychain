@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProducerIoTDevices.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="iotHubConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HostName=supplychain-iothub.azure-devices.net;DeviceId=producer;SharedAccessKey=C4js0/F0UmBLG9PCTKKFHPcFMRKbYA8R2VCPhn65toA=</Value>
+    </Setting>
+    <Setting Name="temperature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="humidity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">45</Value>
+    </Setting>
+    <Setting Name="pm25" Type="System.String" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="co2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="o2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24</Value>
+    </Setting>
+    <Setting Name="n2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">56</Value>
+    </Setting>
+    <Setting Name="interval" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="batchId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A001</Value>
+    </Setting>
+    <Setting Name="buildingId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bld001</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
