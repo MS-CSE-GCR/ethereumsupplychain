@@ -1,6 +1,6 @@
 'use strict';
-var tx = 'http://13.68.218.47:8545';
-var passphrase = 'Pwd=222222222';
+var tx = '{TXNODE}';
+var passphrase = '{PASSPHRASE}';
 var fs = require('fs');
 var Web3 = require('web3');
 var web3 = new Web3();
