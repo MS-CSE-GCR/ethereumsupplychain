@@ -33,6 +33,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIApp", "APIApp", "{DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D}"
 	ProjectSection(SolutionItems) = preProject
 		Producer\ProducerEnvironmentAlert\APIApp\package.json = Producer\ProducerEnvironmentAlert\APIApp\package.json
+		readme.md = readme.md
 		Producer\ProducerEnvironmentAlert\APIApp\server.js = Producer\ProducerEnvironmentAlert\APIApp\server.js
 	EndProjectSection
 EndProject
