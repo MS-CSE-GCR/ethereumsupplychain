@@ -1,0 +1,35 @@
+
+{
+  "name": "blockchicken",
+  "description": "",
+  "version": "0.1.0",
+  "author": "Michael SH Chi<michi@microsoft.com>",
+  "contributors": [],
+  "bugs": "http://github.com/johndoe/contactlist/issues",
+  "engines": {
+    "node": "~0.10.22"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.0.0",
+    "jsonpath": "^0.2.0",
+    "swaggerize-express": "^3.0.0",
+    "swaggerize-ui": "^1.0.1",
+    "web3":"^0.19.0",
+    "solc": "^0.4.17",
+    "web3-eth-contract": "^1.0.0-beta.22",
+    "web3-eth-personal": "^1.0.0-beta.23"    
+  },
+  "devDependencies": {
+    "tape": "^3.0.0",
+    "jshint": "^2.4.1",
+    "istanbul": "~0.2.3",
+    "enjoi": "~0.1.16",
+    "supertest": "~0.13.0"
+  },
+  "scripts": {
+
+    "lint": "jshint -c .jshintrc lib/**/*.js"
+  },
+  "main": "./server"
+}
