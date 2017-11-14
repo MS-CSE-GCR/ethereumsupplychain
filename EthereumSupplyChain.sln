@@ -20,21 +20,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartContracts", "SmartCont
 		Shared\SmartContracts\IoTEnvironmentSummary.sol = Shared\SmartContracts\IoTEnvironmentSummary.sol
 		Shared\SmartContracts\IoTOracleContract.sol = Shared\SmartContracts\IoTOracleContract.sol
 		Shared\SmartContracts\IoTOracleResolver.sol = Shared\SmartContracts\IoTOracleResolver.sol
-		test.js = test.js
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureFunction", "AzureFunction", "{B8ADDD12-9626-4C54-8EA3-EE0F46B832F6}"
-	ProjectSection(SolutionItems) = preProject
-		Producer\ProducerEnvironmentAlert\AzureFunction\function.json = Producer\ProducerEnvironmentAlert\AzureFunction\function.json
-		Producer\ProducerEnvironmentAlert\AzureFunction\index.js = Producer\ProducerEnvironmentAlert\AzureFunction\index.js
-		Producer\ProducerEnvironmentAlert\AzureFunction\package.json = Producer\ProducerEnvironmentAlert\AzureFunction\package.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIApp", "APIApp", "{DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D}"
-	ProjectSection(SolutionItems) = preProject
-		Producer\ProducerEnvironmentAlert\APIApp\package.json = Producer\ProducerEnvironmentAlert\APIApp\package.json
-		readme.md = readme.md
-		Producer\ProducerEnvironmentAlert\APIApp\server.js = Producer\ProducerEnvironmentAlert\APIApp\server.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{DC1B8B3A-1CC9-4975-A169-DEDA24833669}"
@@ -45,31 +30,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{
 		Shared\contracts\IoTOracleResolver.json = Shared\contracts\IoTOracleResolver.json
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{DA0D9206-1B77-498E-B58D-03B96CBB7A6B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebJob", "WebJob", "{2CCBB232-6EFF-45E5-ADD6-2259FC520750}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EthereumOracle", "EthereumOracle", "{59E4DCB6-9379-4E1F-B4EB-2E59B6777DB0}"
 	ProjectSection(SolutionItems) = preProject
-		Producer\ProducerEnvironmentAlert\APIApp\config\app.json = Producer\ProducerEnvironmentAlert\APIApp\config\app.json
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\package.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\package.json
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\run.js = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\run.js
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{B3EC231A-AA65-4CDE-ACF4-6B5E3B839F8C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EthereumWritter", "EthereumWritter", "{CA31E69D-08B5-4439-8623-0101510EBAA2}"
 	ProjectSection(SolutionItems) = preProject
-		Shared\contracts\IoTEnvironmentSummary.json = Shared\contracts\IoTEnvironmentSummary.json
-		Shared\contracts\IoTOracleApp.json = Shared\contracts\IoTOracleApp.json
-		Shared\contracts\IoTOracleContract.json = Shared\contracts\IoTOracleContract.json
-		Shared\contracts\IoTOracleResolver.json = Shared\contracts\IoTOracleResolver.json
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\package.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\package.json
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\run.js = Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\run.js
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "handlers", "handlers", "{673E38E9-1E77-47D3-941E-065EAA3EF7C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{C3E05FB8-B61F-4776-A171-5C498932173F}"
 	ProjectSection(SolutionItems) = preProject
-		Producer\ProducerEnvironmentAlert\APIApp\handlers\contracts.js = Producer\ProducerEnvironmentAlert\APIApp\handlers\contracts.js
-		Producer\ProducerEnvironmentAlert\APIApp\handlers\environmentAlert.js = Producer\ProducerEnvironmentAlert\APIApp\handlers\environmentAlert.js
-		Producer\ProducerEnvironmentAlert\APIApp\handlers\test.js = Producer\ProducerEnvironmentAlert\APIApp\handlers\test.js
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\contracts\IoTEnvironmentSummary.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\contracts\IoTEnvironmentSummary.json
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{37CC6D47-9B6E-4ECD-8587-863239B0F57D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{2077264C-8138-4482-B96C-A1D9AAE9D44D}"
 	ProjectSection(SolutionItems) = preProject
-		Producer\ProducerEnvironmentAlert\APIApp\models\account.js = Producer\ProducerEnvironmentAlert\APIApp\models\account.js
-		Producer\ProducerEnvironmentAlert\APIApp\models\contract.js = Producer\ProducerEnvironmentAlert\APIApp\models\contract.js
-		Producer\ProducerEnvironmentAlert\APIApp\models\Test.js = Producer\ProducerEnvironmentAlert\APIApp\models\Test.js
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTEnvironmentSummary.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTEnvironmentSummary.json
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTOracleContract.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTOracleContract.json
 	EndProjectSection
 EndProject
 Global
@@ -90,16 +73,15 @@ Global
 		{E1B9D91E-1388-43D3-87A9-A9D9E7D4A9AE} = {7CDDA86B-D905-43AF-B6FD-8712ECBF9A12}
 		{F50C2E5E-84EB-4EF2-83E1-854FDD25FFE7} = {7CDDA86B-D905-43AF-B6FD-8712ECBF9A12}
 		{58E06CC4-1ABA-4414-8B79-47401FB7A22A} = {E2CA69F1-8909-4BFF-9C6D-1C9B71BE238B}
-		{B8ADDD12-9626-4C54-8EA3-EE0F46B832F6} = {F50C2E5E-84EB-4EF2-83E1-854FDD25FFE7}
-		{DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D} = {F50C2E5E-84EB-4EF2-83E1-854FDD25FFE7}
 		{DC1B8B3A-1CC9-4975-A169-DEDA24833669} = {E2CA69F1-8909-4BFF-9C6D-1C9B71BE238B}
-		{DA0D9206-1B77-498E-B58D-03B96CBB7A6B} = {DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D}
-		{B3EC231A-AA65-4CDE-ACF4-6B5E3B839F8C} = {DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D}
-		{673E38E9-1E77-47D3-941E-065EAA3EF7C3} = {DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D}
-		{37CC6D47-9B6E-4ECD-8587-863239B0F57D} = {DBEBAE4C-8EE6-4A82-B92C-9CABA071CA0D}
+		{2CCBB232-6EFF-45E5-ADD6-2259FC520750} = {F50C2E5E-84EB-4EF2-83E1-854FDD25FFE7}
+		{59E4DCB6-9379-4E1F-B4EB-2E59B6777DB0} = {2CCBB232-6EFF-45E5-ADD6-2259FC520750}
+		{CA31E69D-08B5-4439-8623-0101510EBAA2} = {2CCBB232-6EFF-45E5-ADD6-2259FC520750}
+		{C3E05FB8-B61F-4776-A171-5C498932173F} = {CA31E69D-08B5-4439-8623-0101510EBAA2}
+		{2077264C-8138-4482-B96C-A1D9AAE9D44D} = {59E4DCB6-9379-4E1F-B4EB-2E59B6777DB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6992DC17-5DBA-4DD3-9118-916BBBCAB5B9}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
+		SolutionGuid = {6992DC17-5DBA-4DD3-9118-916BBBCAB5B9}
 	EndGlobalSection
 EndGlobal

@@ -22,6 +22,7 @@ contract IoTOracleContract {
 
     //summary:contract address
     function triggerEvent(bool isAlret, address sender, address receiver, address summary, string txnHash) returns (bool){
+		state = txnHash;
         QueryEvent(sender, receiver, summary, txnHash);
 
         return true;

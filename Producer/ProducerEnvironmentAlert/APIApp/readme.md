@@ -1,1 +1,0 @@
-to run this web site, execute "sudo npm start"

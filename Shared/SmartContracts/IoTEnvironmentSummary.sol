@@ -4,9 +4,9 @@ import "./IoTOracleContract.sol";
 import "./IoTOracleResolver.sol";
 
 /*
-IoTOracleContract: '0x981f29A905dA1A4CE3c295304A3E78dC7a1e0225'
+IoTOracleContract: '0x28c0b5f1985a7e812DDeD805842faD43E09BDE9d'
 IoTOracleResolver: '0xD47C737cD7Dd589310ca3F105DD7d3505A754Fbf'
-IoTEnvironmentSummary: 0x346d38d32962a32e1e9967acb8e5ccbc949e4197
+IoTEnvironmentSummary: 0xf499a3328698423bd27ce4fc16e76c3ca84d0a8e
 */
 
 //my client contract
@@ -16,7 +16,7 @@ contract IoTOracleApp {
 
     function IoTOracleApp() {
         resolver = IoTOracleResolver(0xD47C737cD7Dd589310ca3F105DD7d3505A754Fbf);//change the address to your OracleResolver.sol checksum address
-        resolver.setOracleAddress(0x981f29A905dA1A4CE3c295304A3E78dC7a1e0225);//change the address to your Oracle.sol checksum address
+        resolver.setOracleAddress(0x28c0b5f1985a7e812DDeD805842faD43E09BDE9d);//change the address to your Oracle.sol checksum address
         oracle = IoTOracleContract(resolver.getOracleAddress());
     }
 
@@ -64,7 +64,7 @@ contract IoTEnvironmentSummary is IoTOracleApp {
         txnHash = _txnHash;
         isAlert = _isAlert;
         indexes = _indexes;
-
-        queryOracle(isAlert, sender, receiver, summary, txnHash);
+		oracle.triggerEvent(isAlert, sender,  receiver,  summary,  txnHash);
+        //queryOracle(isAlert, sender, receiver, summary, txnHash);
     }
 }
