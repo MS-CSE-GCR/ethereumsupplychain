@@ -743,7 +743,7 @@ When specify address in your Node.Js code, you have to give it a ¡§checksum¡¨ ad
 
 There are many possible reason that can cause this error, some of those I¡¦ve encountered
 -  You are deploying abstract contract
->   This is a limitation in Ethereum, you will have to restructure your contract.
+   This is a limitation in Ethereum, you will have to restructure your contract.
 
 -  You have existing, old, compiled contract binary in your build folder
->   Run ¡§rm build/ -rf¡¨ to delete existing built binary
+   Run **rm build/ -rf** to delete existing built binary
