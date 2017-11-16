@@ -56,7 +56,6 @@ Below illustrates architecture of this prototype
 
 References
 ==========
-
 Azure Web Job: <https://github.com/projectkudu/kudu/wiki/WebJobs>
 
 Service Bus Explorer: <https://github.com/paolosalvatori/ServiceBusExplorer>
@@ -65,12 +64,34 @@ Truffle official site: <http://truffleframework.com/>
 
 Web3.JS: <https://github.com/ethereum/web3.js/>
 
-Solidity official site: <https://solidity.readthedocs.io/en/develop/>
+Solidity: <https://solidity.readthedocs.io/en/develop/>
+
 
 Next Steps
 ==========
+[Create an Ethereum Blockchain](#create-an-ethereum-blockchain)
 
-Create an Ethereum Blockchain
+[Create truffle Environment](#create-truffle-environment)
+
+[Writing Smart contracts](#writing-smart-contracts)
+
+[Deploying smart contracts](#deploying-smart-contracts)
+
+[Create Ethereum Writter WebJob](#create-ethereum-writter-webjob)
+
+[Create Ethereum Oracle WebJob](#create-ethereum-oracle-webjob)
+
+[Deploying WebJob](#create-and-deploy-webjob)
+
+[Test Solution](#test-the-solution)
+
+[Troubleshooting](#troubleshooting)
+
+
+
+
+
+### Create an Ethereum Blockchain ###
 =============================
 
 1.  Login to Azure Portal
@@ -124,7 +145,7 @@ Create an Ethereum Blockchain
 
 ![](media/df99a63d059171e51af38b4675109adf.png)
 
-Create Truffle environment
+### Create Truffle environment ###
 ==========================
 
 1.  Create a truffle machine from Azure Marketplace
@@ -182,7 +203,7 @@ sudo nano truffle.js
 Now you have successfully created Ethereum Consortium Blockchain and truffle
 environment.
 
-Create IoT Environment
+### Create IoT Environment ###
 ======================
 
 1.  In this step, we will be creating an Azure IoT Hub, Azure Stream Analytics
@@ -292,7 +313,7 @@ only for demo purpose.
 
 ![](media/2c229ff82014761118b86c3bc1f54502.png)
 
-Writing Smart Contracts
+### Writing Smart Contracts ###
 =======================
 
 In this section, we will be using Visual Studio Code to write 3 smart contracts.
@@ -446,7 +467,7 @@ contract IoTEnvironmentSummary is IoTOracleApp {
 
 We have successfully created smart contracts.
 
-Deploying Smart Contracts
+### Deploying Smart Contracts ###
 =========================
 
 In this section, we will deploy smart contracts to Ethereum Blockchain. Depends
@@ -531,7 +552,7 @@ so, you can use PSCP.exe on a Windows machine, or SCP in Linux based machine.
 
 ![](media/8b6051e1d2207bf0dcc864b5949192ea.png)
 
-Create EthereumWritter WebJob
+### Create Ethereum Writter WebJob ###
 =============================
 
 In this section, we will be writing a Node.JS WebJob to monitor messages coming
@@ -624,7 +645,7 @@ Due to Stream Analytics serialization mechanism we will need to deal with serial
 
 ![](media/06317764753da1f4461d26d8ebb5f2ff.png)
 
-Create EthereumOrcale WebJob
+### Create Ethereum Oracle WebJob ###
 ============================
 
 In this section, we will be writing a Node.JS WebJob to listen to QueryEvent notification coming from Ethereum blockchain.
@@ -662,7 +683,7 @@ In this section, we will be writing a Node.JS WebJob to listen to QueryEvent not
 
 ![](media/dbdfdb5334f59079c68a23a744c2c44f.png)
 
-Create and Deploy WebJob
+### Create and Deploy WebJob ###
 ========================
 
 1.  Go to Azure Portal, Create a new Azure Web App
@@ -705,7 +726,7 @@ Create and Deploy WebJob
 
 ![](media/23473d7e38a0c63d3c690c8a40d4e393.png)
 
-Test the solution
+### Test the solution ###
 =================
 
 
@@ -715,7 +736,7 @@ Test the solution
 
 1.  Change PM2.5 value to 30 or higher to see how message received by EthereumWritter and get mined.
 
-Troubleshooting
+### Troubleshooting ###
 ===============
 
 When deploying contract to Etheruem blockchain, you got **password or unlock** error
