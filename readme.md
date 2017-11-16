@@ -18,10 +18,10 @@ Prerequisites
 In order to follow this document to create this prototype, we use below tools to
 develop, manage and deploy solutions.
 
--   Visual Studio 2017 (Community or above) ¡V required to compile Device
+-   Visual Studio 2017 (Community or above) required to compile Device
     simulator
 
--   Service Bus Explorer ¡V for testing
+-   Service Bus Explorer !V for testing
 
 -   Visual Studio Code (or other Solidity and Node.Js editor)
 
@@ -37,7 +37,7 @@ Scenario
 --------
 
 In this demo, we will be creating an IoT solution that collects environment
-metrics such as temperature, humidity, pm2.5¡Ketc. When certain criteria are met,
+metrics such as temperature, humidity, pm2.5!Ketc. When certain criteria are met,
 for example, temperature or humidity higher than a threshold, the IoT solution
 writes abnormal telemetry to Ethereum Blockchain.
 
@@ -149,7 +149,7 @@ Create Truffle environment
 
 ![](media/ac901fc535e3587f6ef9503a2aecba4d.png)
 
-1.  Execute ¡§truffle version¡¨ command to check truffle version. In general, you
+1.  Execute **truffle version** command to check truffle version. In general, you
     should have latest truffle installed. (as of when the document was created,
     latest version is v4.0.0).
 
@@ -160,16 +160,19 @@ default
 
 1.  Initiate truffle project by executing below command
 
-¡§truffle init¡¨
+```sh
+truffle init
+```
 
 ![](media/b64fc4d93c6124820f0f50ae40de9e4c.png)
 
 1.  Edit truffle.js by running below command
 
-¡§sudo nano truffle.js¡¨
+```
+sudo nano truffle.js
+```
 
-1.  Update your truffle.js as below, specify your Transaction node IP address as
-    ¡§host¡¨
+1.  Update your truffle.js as below, specify your Transaction node IP address as host
 
 ![](media/b6fbdf40741f6f2b57cb740ddffb1fd0.png)
 
@@ -196,7 +199,7 @@ Create IoT Environment
 
 1.  Now create a Service Bus namespace
 
-2.  In this exercise we don¡¦t need advanced features so switch to Basic tier.
+2.  In this exercise we don!|t need advanced features so switch to Basic tier.
     Copy down the name of the service bus namespace.
 
 ![](media/7fe4bc47c0c39606c50d41f24a66d082.png)
@@ -256,7 +259,7 @@ Create IoT Environment
 
 ![](media/e0aa522159b5827835d28b570d688079.png)
 
-1.  Name the Output ¡§serviceBus¡¨, choose Service Bus Namespace and Queue we
+1.  Name the Output **serviceBus**, choose Service Bus Namespace and Queue we
     created
 
 ![](media/0a5ace9aa0a1bb2ff3b07bbe9a594b88.png)
@@ -270,7 +273,7 @@ Create IoT Environment
 1.  Input below SQL statement in Query Editor.
 
 **Note** : Below SQL Statement output telemetry that has PM25 value greater than
-20. In real-world scenario you don¡¦t want to have all telemetry into blockchain.
+20. In real-world scenario you don!|t want to have all telemetry into blockchain.
 Instead, you want to ingest only an average or summary into Blockchain. Below is
 only for demo purpose.
 ```sh
@@ -313,7 +316,7 @@ In this section, we will be using Visual Studio Code to write 3 smart contracts.
 
 1.  Open Visual Studio Code (or your favorite Solidity editor)
 
-2.  If you haven¡¦t install Solidity extension, install one from extension list.
+2.  If you haven!|t install Solidity extension, install one from extension list.
 
 ![](media/38efec8644bc140f860230fcf749d0ec.png)
 
@@ -458,17 +461,17 @@ also work in truffle 3.0.
 
 1.  Check if your host IP address is up-to-date in truffle.js
 
-    -   To prevent gas limit issue, we add a ¡§gas¡¨ in the configuration file
+    -   To prevent gas limit issue, we add a **gas** in the configuration file
 
 ![](media/6abd295b5019f7933a170a0c76af5f92.png)
 
 1.  Check migration folder, you should see only one file called
-    1_initial_migration.js, if that¡¦s the case, create a new file call 2_my.js
+    1_initial_migration.js, if that!|s the case, create a new file call 2_my.js
     with below content.
 
     -   We will be deploying IoTOracleContract.sol, get its contract address,
         update IoTEnvironmentSummary.sol then deploy IoTEnvironmentSummary.sol.
-        That¡¦s why we mark out IoTEnvironmentSummary.sol related codes here at
+        That!|s why we mark out IoTEnvironmentSummary.sol related codes here at
         this moment.
 
 ![](media/d82bf3f32290cd3e1e151130e6e66410.png)
@@ -477,16 +480,15 @@ also work in truffle 3.0.
 ```sh
         rm build/ -rf
 ```
-1.  Run ¡§truffle compile¡¨ to compile our contracts
+1.  Run **truffle compile** to compile our contracts
 
 ![](media/8ec1ef8d25b7fdffb0696c9cf1889c2c.png)
 
-1.  Run ¡§truffle console¡¨ to enter truffle console. We will need to unlock
-    default account in order to deploy smart contract.
+1.  Run **truffle console** to enter truffle console. We will need to unlock default account in order to deploy smart contract.
 
     -   In truffle console, run
 ```sh
-        web3.personal.unlockAccount(web3.eth.accounts[0],¡¦\<YOUR ETHEREUM ACCOUNT PASSWORD\>¡¦);
+        web3.personal.unlockAccount(web3.eth.accounts[0],!|\<YOUR ETHEREUM ACCOUNT PASSWORD\>!|);
 ```
 ![](media/4b354ac4dbf26cd93ece8549130387f2.png)
 
@@ -501,7 +503,7 @@ If everything goes well, you should see something like below, note the contract 
 1.  Run below command to convert address to
     checksum address, not the converted address, we will need it later.
 ```sh
-        web3.toChecksumAddress(¡¥\<CONTRACT ADDRESS\>¡¦);
+        web3.toChecksumAddress(!¢D\<CONTRACT ADDRESS\>!|);
 ```
 ![](media/0943b951616e89ffb68f62e952c79832.png)
 
@@ -544,7 +546,7 @@ please go to official Github documents here:
 
 1.  Switch to WebJob source code folder of your choice.
 
-2.  Create a subfolder called ¡§contracts¡¨, and copy JSON files we copied from
+2.  Create a subfolder called **contracts**, and copy JSON files we copied from
     truffle machine to this folder.
 
 ![](media/250fc63b5b68ff2b1e3ebdc0af9e780e.png)
@@ -558,7 +560,7 @@ please go to official Github documents here:
     -   **\__dirname** is a Azure WebJob keyword that represents current working
         directory
 
-    -   Process.env.\<PARAMETER_NAME\> is how you access to cloud configuration settings in Web Job. We store configuration in Azure App Service¡¦s App Settings section.
+    -   Process.env.\<PARAMETER_NAME\> is how you access to cloud configuration settings in Web Job. We store configuration in Azure App Service!|s App Settings section.
 
 3.  Add below codes
 
@@ -581,9 +583,9 @@ Due to Stream Analytics serialization mechanism we will need to deal with serial
 
     -   **Is_in_place** set to false means Azure WebJob runtime will copy your binary file to a temp folder and run your program there. This prevents from files been locked when updating binary.
 
-        >   In our scenario, Web3.JS uses a ¡§sync¡¨ file to sync between different thread
-        >   and process ¡V the creation and deletion of ¡§sync¡¨ file will cause WebJob to
-        >   ¡§refresh¡¨, we want to avoid this behavior.
+        >   In our scenario, Web3.JS uses a **sync** file to sync between different thread
+        >   and process !V the creation and deletion of sync file will cause WebJob to
+        >   refresh, we want to avoid this behavior.
 
     -   **Is_singleton** set to true means we will run Web Job in singleton mode.
 ```sh
@@ -610,7 +612,7 @@ Due to Stream Analytics serialization mechanism we will need to deal with serial
     }
 }
 ```
-1.  Launch console, switch to source folder, run **¡§npm install¡¨** to install all Node.js packages required.
+1.  Launch console, switch to source folder, run **npm install** to install all Node.js packages required.
 
 ![](media/a02ee3564d8320fda3ef887f96e5a95a.png)
 
@@ -628,7 +630,7 @@ Create EthereumOrcale WebJob
 In this section, we will be writing a Node.JS WebJob to listen to QueryEvent notification coming from Ethereum blockchain.
 
 1.  Switch to WebJob source code folder of your choice.
-2.  Create a subfolder called ¡§contracts¡¨, and copy JSON files we copied from truffle machine to this folder.
+2.  Create a subfolder called **contracts**, and copy JSON files we copied from truffle machine to this folder.
 
 ![](media/250fc63b5b68ff2b1e3ebdc0af9e780e.png)
 
@@ -655,7 +657,7 @@ In this section, we will be writing a Node.JS WebJob to listen to QueryEvent not
 ```sh
 { "is_in_place": false, "is_singleton": true }
 ```
-1.  Open console, run ¡§npm install¡¨ to install NODE.JS packages
+1.  Open console, run **npm install** to install NODE.JS packages
 2.  ZIP all files in the folder
 
 ![](media/dbdfdb5334f59079c68a23a744c2c44f.png)
@@ -697,7 +699,7 @@ Create and Deploy WebJob
 
 ![](media/4f53be7b6f5264a805d2ab8196d672a9.png)
 
-1.  Click ¡§Logs¡¨ button to open up Log view, you can find your application logs here
+1.  Click **Logs** button to open up Log view, you can find your application logs here
 
 ![](media/a833d02b282b97ea9daf986c493183d6.png)
 
@@ -716,34 +718,34 @@ Test the solution
 Troubleshooting
 ===============
 
-When deploying contract to Etheruem blockchain, you got ¡§password or unlock¡¨ error
+When deploying contract to Etheruem blockchain, you got **password or unlock** error
 --
 ![](media/4f0df9c3f55100c4e26782dc80dbc2eb.png)
 
 **Solution**
 
-This error often caused by account locked. Run ¡§truffle console¡¨ to enter truffle console mode. Execute below command to unlock account
+This error often caused by account locked. Run **truffle console** to enter truffle console mode. Execute below command to unlock account
 ```sh
-        web3.personal.unlockAccount(web3.eth.accounts[0],¡¦\<PASSWORD\>¡¦);
+        web3.personal.unlockAccount(web3.eth.accounts[0],!|\<PASSWORD\>!|);
 ```
 
-¡§Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.¡¨ In your Node.Js code.
+Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00' in your Node.Js code.
 --
 **Solution**
 
-When specify address in your Node.Js code, you have to give it a ¡§checksum¡¨ address, you get checksum address from your contract or account address by invoking below command
+When specify address in your Node.Js code, you have to give it a ¡§checksum" address, you get checksum address from your contract or account address by invoking below command
 ```sh
         web3.toChecksumAddress(\<YOUR ADDRESS\>);
 ```
 ![](media/d74b6891d039f75cef3cb3c3ff2025fb.png)
 
-¡¨ The contract code couldn't be stored, please check your gas amount¡¨
+The contract code couldn't be stored, please check your gas amount!¡L
 --
 **Solution**
 
-There are many possible reason that can cause this error, some of those I¡¦ve encountered
+There are many possible reason that can cause this error, some of those I!|ve encountered
 -  You are deploying abstract contract
    This is a limitation in Ethereum, you will have to restructure your contract.
 
 -  You have existing, old, compiled contract binary in your build folder
-   Run **rm build/ -rf** to delete existing built binary
+   Run rm build/ -rf!¡L to delete existing built binary
