@@ -36,12 +36,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EthereumOracle", "EthereumO
 	ProjectSection(SolutionItems) = preProject
 		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\package.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\package.json
 		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\run.js = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\run.js
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\settings.job = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\settings.job
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EthereumWritter", "EthereumWritter", "{CA31E69D-08B5-4439-8623-0101510EBAA2}"
 	ProjectSection(SolutionItems) = preProject
 		Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\package.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\package.json
 		Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\run.js = Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\run.js
+		Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\settings.job = Producer\ProducerEnvironmentAlert\WebJob\EthereumWritter\settings.job
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{C3E05FB8-B61F-4776-A171-5C498932173F}"
@@ -53,6 +55,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contracts", "contracts", "{
 	ProjectSection(SolutionItems) = preProject
 		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTEnvironmentSummary.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTEnvironmentSummary.json
 		Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTOracleContract.json = Producer\ProducerEnvironmentAlert\WebJob\EthereumOracle\contracts\IoTOracleContract.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionApp", "FunctionApp", "{F5171FC0-3CCA-40B7-9494-08E27863D071}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "obsolete", "obsolete", "{726D3EF4-6D65-41F2-BB29-F6266C6C2AD5}"
+	ProjectSection(SolutionItems) = preProject
+		Producer\ProducerEnvironmentAlert\FunctionApp\obsolete\index.js = Producer\ProducerEnvironmentAlert\FunctionApp\obsolete\index.js
+		Producer\ProducerEnvironmentAlert\FunctionApp\obsolete\package.json = Producer\ProducerEnvironmentAlert\FunctionApp\obsolete\package.json
 	EndProjectSection
 EndProject
 Global
@@ -79,6 +89,8 @@ Global
 		{CA31E69D-08B5-4439-8623-0101510EBAA2} = {2CCBB232-6EFF-45E5-ADD6-2259FC520750}
 		{C3E05FB8-B61F-4776-A171-5C498932173F} = {CA31E69D-08B5-4439-8623-0101510EBAA2}
 		{2077264C-8138-4482-B96C-A1D9AAE9D44D} = {59E4DCB6-9379-4E1F-B4EB-2E59B6777DB0}
+		{F5171FC0-3CCA-40B7-9494-08E27863D071} = {F50C2E5E-84EB-4EF2-83E1-854FDD25FFE7}
+		{726D3EF4-6D65-41F2-BB29-F6266C6C2AD5} = {F5171FC0-3CCA-40B7-9494-08E27863D071}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8

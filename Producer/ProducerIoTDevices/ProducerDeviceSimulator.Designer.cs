@@ -182,84 +182,75 @@
             // 
             // buildingId
             // 
-            this.buildingId.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "buildingId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.buildingId.Location = new System.Drawing.Point(96, 264);
             this.buildingId.Name = "buildingId";
             this.buildingId.Size = new System.Drawing.Size(100, 20);
             this.buildingId.TabIndex = 22;
-            this.buildingId.Text = global::ProducerIoTDevices.Properties.Settings.Default.buildingId;
+            this.buildingId.Text = "Bld001";
             // 
             // batchId
             // 
-            this.batchId.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "batchId", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.batchId.Location = new System.Drawing.Point(96, 238);
             this.batchId.Name = "batchId";
             this.batchId.Size = new System.Drawing.Size(100, 20);
             this.batchId.TabIndex = 20;
-            this.batchId.Text = global::ProducerIoTDevices.Properties.Settings.Default.batchId;
+            this.batchId.Text = "A001";
             // 
             // interval
             // 
-            this.interval.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "interval", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.interval.Location = new System.Drawing.Point(96, 208);
             this.interval.Name = "interval";
             this.interval.Size = new System.Drawing.Size(100, 20);
             this.interval.TabIndex = 14;
-            this.interval.Text = global::ProducerIoTDevices.Properties.Settings.Default.interval;
+            this.interval.Text = "3";
             // 
             // n2
             // 
-            this.n2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "n2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.n2.Location = new System.Drawing.Point(96, 176);
             this.n2.Name = "n2";
             this.n2.Size = new System.Drawing.Size(100, 20);
             this.n2.TabIndex = 11;
-            this.n2.Text = global::ProducerIoTDevices.Properties.Settings.Default.n2;
+            this.n2.Text = "56";
             // 
             // o2
             // 
-            this.o2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "o2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.o2.Location = new System.Drawing.Point(96, 147);
             this.o2.Name = "o2";
             this.o2.Size = new System.Drawing.Size(100, 20);
             this.o2.TabIndex = 9;
-            this.o2.Text = global::ProducerIoTDevices.Properties.Settings.Default.o2;
+            this.o2.Text = "24";
             // 
             // co2
             // 
-            this.co2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "co2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.co2.Location = new System.Drawing.Point(96, 118);
             this.co2.Name = "co2";
             this.co2.Size = new System.Drawing.Size(100, 20);
             this.co2.TabIndex = 7;
-            this.co2.Text = global::ProducerIoTDevices.Properties.Settings.Default.co2;
+            this.co2.Text = "13";
             // 
             // pm25
             // 
-            this.pm25.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "pm25", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.pm25.Location = new System.Drawing.Point(96, 89);
             this.pm25.Name = "pm25";
             this.pm25.Size = new System.Drawing.Size(100, 20);
             this.pm25.TabIndex = 5;
-            this.pm25.Text = global::ProducerIoTDevices.Properties.Settings.Default.pm25;
+            this.pm25.Text = "12";
             // 
             // humidity
             // 
-            this.humidity.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "humidity", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.humidity.Location = new System.Drawing.Point(96, 60);
             this.humidity.Name = "humidity";
             this.humidity.Size = new System.Drawing.Size(100, 20);
             this.humidity.TabIndex = 4;
-            this.humidity.Text = global::ProducerIoTDevices.Properties.Settings.Default.humidity;
+            this.humidity.Text = "45";
             // 
             // temperature
             // 
-            this.temperature.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ProducerIoTDevices.Properties.Settings.Default, "temperature", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.temperature.Location = new System.Drawing.Point(96, 31);
             this.temperature.Name = "temperature";
             this.temperature.Size = new System.Drawing.Size(100, 20);
             this.temperature.TabIndex = 3;
-            this.temperature.Text = global::ProducerIoTDevices.Properties.Settings.Default.temperature;
+            this.temperature.Text = "22";
             // 
             // ProducerDeviceSimulator
             // 
