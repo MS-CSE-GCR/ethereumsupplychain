@@ -65,6 +65,80 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "obsolete", "obsolete", "{72
 		Producer\ProducerEnvironmentAlert\FunctionApp\obsolete\package.json = Producer\ProducerEnvironmentAlert\FunctionApp\obsolete\package.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{064C21DF-B5A9-4B89-AB4C-02DACE233DD8}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "media", "media", "{D1494B7D-0FF1-40C4-940E-8EEF2EF9547C}"
+	ProjectSection(SolutionItems) = preProject
+		media\041392d8264b85c1d76192e5ea0136fd.png = media\041392d8264b85c1d76192e5ea0136fd.png
+		media\06317764753da1f4461d26d8ebb5f2ff.png = media\06317764753da1f4461d26d8ebb5f2ff.png
+		media\0943b951616e89ffb68f62e952c79832.png = media\0943b951616e89ffb68f62e952c79832.png
+		media\0a5ace9aa0a1bb2ff3b07bbe9a594b88.png = media\0a5ace9aa0a1bb2ff3b07bbe9a594b88.png
+		media\0ddd3f0fbb863fb2d98fbd0d22861d1d.png = media\0ddd3f0fbb863fb2d98fbd0d22861d1d.png
+		media\11a56010017be20794332590f48622be.png = media\11a56010017be20794332590f48622be.png
+		media\12606b576dfe5059d6ecdabe649fdede.png = media\12606b576dfe5059d6ecdabe649fdede.png
+		media\16d7af7f8c5e764c90d9ae466a2d2edd.png = media\16d7af7f8c5e764c90d9ae466a2d2edd.png
+		media\1958987b1270baf2467aab2cf4fd77c8.png = media\1958987b1270baf2467aab2cf4fd77c8.png
+		media\198fe13ea5ce19e093bd86659e150163.png = media\198fe13ea5ce19e093bd86659e150163.png
+		media\1b58b10efb93f314b50feb156822686d.png = media\1b58b10efb93f314b50feb156822686d.png
+		media\1cf7412aa7b0d463be5bb6da988e9d0c.png = media\1cf7412aa7b0d463be5bb6da988e9d0c.png
+		media\23473d7e38a0c63d3c690c8a40d4e393.png = media\23473d7e38a0c63d3c690c8a40d4e393.png
+		media\236c32a3abf1575bbf4b05b041fd855d.png = media\236c32a3abf1575bbf4b05b041fd855d.png
+		media\250fc63b5b68ff2b1e3ebdc0af9e780e.png = media\250fc63b5b68ff2b1e3ebdc0af9e780e.png
+		media\2b62e1dcfeabeecb351f006c8e5eca65.png = media\2b62e1dcfeabeecb351f006c8e5eca65.png
+		media\2c229ff82014761118b86c3bc1f54502.png = media\2c229ff82014761118b86c3bc1f54502.png
+		media\38efec8644bc140f860230fcf749d0ec.png = media\38efec8644bc140f860230fcf749d0ec.png
+		media\3d3f6ad1be8536e9b01f3428398fd841.png = media\3d3f6ad1be8536e9b01f3428398fd841.png
+		media\442a0a1dd271a6d710d8a5978dbdf158.png = media\442a0a1dd271a6d710d8a5978dbdf158.png
+		media\4b354ac4dbf26cd93ece8549130387f2.png = media\4b354ac4dbf26cd93ece8549130387f2.png
+		media\4f0df9c3f55100c4e26782dc80dbc2eb.png = media\4f0df9c3f55100c4e26782dc80dbc2eb.png
+		media\4f53be7b6f5264a805d2ab8196d672a9.png = media\4f53be7b6f5264a805d2ab8196d672a9.png
+		media\67318d1f8f97ceb09e9ef18a02ae0824.png = media\67318d1f8f97ceb09e9ef18a02ae0824.png
+		media\6a1d11051d92e805e8e58338948ac276.png = media\6a1d11051d92e805e8e58338948ac276.png
+		media\6abd295b5019f7933a170a0c76af5f92.png = media\6abd295b5019f7933a170a0c76af5f92.png
+		media\6ae851f20ac4ccf80eeca5d2e97a1e15.png = media\6ae851f20ac4ccf80eeca5d2e97a1e15.png
+		media\6bc14e6e818324bf6677ea7b5cf0ff40.png = media\6bc14e6e818324bf6677ea7b5cf0ff40.png
+		media\72f02ba5823edda0230bfbc68907aab4.png = media\72f02ba5823edda0230bfbc68907aab4.png
+		media\7d75e93f126c4e083723d1358729fbf4.png = media\7d75e93f126c4e083723d1358729fbf4.png
+		media\7eb9bba16a26fec5358e3355fdab67c4.png = media\7eb9bba16a26fec5358e3355fdab67c4.png
+		media\7fe4bc47c0c39606c50d41f24a66d082.png = media\7fe4bc47c0c39606c50d41f24a66d082.png
+		media\8b6051e1d2207bf0dcc864b5949192ea.png = media\8b6051e1d2207bf0dcc864b5949192ea.png
+		media\8ec1ef8d25b7fdffb0696c9cf1889c2c.png = media\8ec1ef8d25b7fdffb0696c9cf1889c2c.png
+		media\95f2d7fe1db34ba5ec318de2eec8eb70.png = media\95f2d7fe1db34ba5ec318de2eec8eb70.png
+		media\9b9e129f627927529c00a8634c3ae884.png = media\9b9e129f627927529c00a8634c3ae884.png
+		media\9f4a3eca88c9465aa955c4ea981f1736.png = media\9f4a3eca88c9465aa955c4ea981f1736.png
+		media\9f76ef46d8e81b27ab4225ff78dfa0f4.png = media\9f76ef46d8e81b27ab4225ff78dfa0f4.png
+		media\a02ee3564d8320fda3ef887f96e5a95a.png = media\a02ee3564d8320fda3ef887f96e5a95a.png
+		media\a4586039277de4cbcc5951b66a2481a3.png = media\a4586039277de4cbcc5951b66a2481a3.png
+		media\a833d02b282b97ea9daf986c493183d6.png = media\a833d02b282b97ea9daf986c493183d6.png
+		media\ab1d2cfe2a0c0bb7b6cebcecea4ed1a3.png = media\ab1d2cfe2a0c0bb7b6cebcecea4ed1a3.png
+		media\ac901fc535e3587f6ef9503a2aecba4d.png = media\ac901fc535e3587f6ef9503a2aecba4d.png
+		media\ad6d858b71acc75106a8a1651347f258.png = media\ad6d858b71acc75106a8a1651347f258.png
+		media\b64fc4d93c6124820f0f50ae40de9e4c.png = media\b64fc4d93c6124820f0f50ae40de9e4c.png
+		media\b6fbdf40741f6f2b57cb740ddffb1fd0.png = media\b6fbdf40741f6f2b57cb740ddffb1fd0.png
+		media\b73f234c28acad78169b7f93ce2222b9.png = media\b73f234c28acad78169b7f93ce2222b9.png
+		media\b8dcfa7d8070fd79bee20f86021f9391.png = media\b8dcfa7d8070fd79bee20f86021f9391.png
+		media\bcdd5384b8d74486dbcb7848111e5575.png = media\bcdd5384b8d74486dbcb7848111e5575.png
+		media\bd7144828640125ca2d5ab9067a5ee18.png = media\bd7144828640125ca2d5ab9067a5ee18.png
+		media\c52ca164dd5d45ab346394fa0f3c70d5.png = media\c52ca164dd5d45ab346394fa0f3c70d5.png
+		media\c7fd19f7ce37c58af4d2f486fc58d2bb.png = media\c7fd19f7ce37c58af4d2f486fc58d2bb.png
+		media\cb615e6bea77f82ce70bf50058eaac7c.png = media\cb615e6bea77f82ce70bf50058eaac7c.png
+		media\cbdd6d620277d362b3af49214343e942.png = media\cbdd6d620277d362b3af49214343e942.png
+		media\cd927782af4a12d62e0acbe077f5aafb.png = media\cd927782af4a12d62e0acbe077f5aafb.png
+		media\cefb3b522f582311169c1eadf651996b.png = media\cefb3b522f582311169c1eadf651996b.png
+		media\d3296f6185e7482861f191d7d4ea6f3a.png = media\d3296f6185e7482861f191d7d4ea6f3a.png
+		media\d74b6891d039f75cef3cb3c3ff2025fb.png = media\d74b6891d039f75cef3cb3c3ff2025fb.png
+		media\d82bf3f32290cd3e1e151130e6e66410.png = media\d82bf3f32290cd3e1e151130e6e66410.png
+		media\db6b27ee8f022bd6fb92ff667f17d213.png = media\db6b27ee8f022bd6fb92ff667f17d213.png
+		media\dbdfdb5334f59079c68a23a744c2c44f.png = media\dbdfdb5334f59079c68a23a744c2c44f.png
+		media\df99a63d059171e51af38b4675109adf.png = media\df99a63d059171e51af38b4675109adf.png
+		media\e0aa522159b5827835d28b570d688079.png = media\e0aa522159b5827835d28b570d688079.png
+		media\e6b1157c4b284b7cc23b8b81a3a2276d.png = media\e6b1157c4b284b7cc23b8b81a3a2276d.png
+		media\f1d20391fa05e6ddd9eeadd1dbc782c6.png = media\f1d20391fa05e6ddd9eeadd1dbc782c6.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,7 +167,7 @@ Global
 		{726D3EF4-6D65-41F2-BB29-F6266C6C2AD5} = {F5171FC0-3CCA-40B7-9494-08E27863D071}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
 		SolutionGuid = {6992DC17-5DBA-4DD3-9118-916BBBCAB5B9}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
 	EndGlobalSection
 EndGlobal
