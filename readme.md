@@ -505,9 +505,9 @@ also work in truffle 3.0.
 
 ![](media/8ec1ef8d25b7fdffb0696c9cf1889c2c.png)
 
-1.  Run **truffle console** to enter truffle console. We will need to unlock default account in order to deploy smart contract.
+1.  Connect to transaction node console at port 3000. We will need to unlock default account in order to deploy smart contract.
 
-    -   In truffle console, run
+    -   In the transaction node console, run
 ```sh
         web3.personal.unlockAccount(web3.eth.accounts[0],!|\<YOUR ETHEREUM ACCOUNT PASSWORD\>!|);
 ```
@@ -524,7 +524,7 @@ If everything goes well, you should see something like below, note the contract 
 1.  Run below command to convert address to
     checksum address, not the converted address, we will need it later.
 ```sh
-        web3.toChecksumAddress(!¢D\<CONTRACT ADDRESS\>!|);
+        web3.toChecksumAddress(!Â¢D\<CONTRACT ADDRESS\>!|);
 ```
 ![](media/0943b951616e89ffb68f62e952c79832.png)
 
@@ -754,13 +754,13 @@ Warning: This looks like an address but has an invalid checksum. If this is not 
 --
 **Solution**
 
-When specify address in your Node.Js code, you have to give it a ¡§checksum" address, you get checksum address from your contract or account address by invoking below command
+When specify address in your Node.Js code, you have to give it a Â¡Â§checksum" address, you get checksum address from your contract or account address by invoking below command
 ```sh
         web3.toChecksumAddress(\<YOUR ADDRESS\>);
 ```
 ![](media/d74b6891d039f75cef3cb3c3ff2025fb.png)
 
-The contract code couldn't be stored, please check your gas amount!¡L
+The contract code couldn't be stored, please check your gas amount!Â¡L
 --
 **Solution**
 
@@ -769,4 +769,4 @@ There are many possible reason that can cause this error, some of those I!|ve en
    This is a limitation in Ethereum, you will have to restructure your contract.
 
 -  You have existing, old, compiled contract binary in your build folder
-   Run rm build/ -rf!¡L to delete existing built binary
+   Run rm build/ -rf!Â¡L to delete existing built binary
