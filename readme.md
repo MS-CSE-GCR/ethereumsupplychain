@@ -100,50 +100,54 @@ Next Steps
 
 ![](media/2b62e1dcfeabeecb351f006c8e5eca65.png)
 
-1.  Fills in Basic Blade
+3.  Fills in Basic Blade
 
 ![](media/cbdd6d620277d362b3af49214343e942.png)
 
-1.  Input required information in Network blade
+4.  Input required information in Network blade
 
     -   For demo purpose, you can change virtual machine size to A1 to save
         cost.
 
 ![](media/bd7144828640125ca2d5ab9067a5ee18.png)
 
-1.  In Ethereum Settings blade, specify account password and private key
+5.  In Ethereum Settings blade, specify account password and private key
     passphrase.
 
 ![](media/cb615e6bea77f82ce70bf50058eaac7c.png)
 
-1.  Review summary and click OK to continue
+6.  Review summary and click OK to continue
 
 ![](media/d3296f6185e7482861f191d7d4ea6f3a.png)
 
-1.  Accept TOS and click Create
+7.  Accept TOS and click Create
 
 ![](media/041392d8264b85c1d76192e5ea0136fd.png)
 
-1.  Once created, go to your resource group view, search for virtual network
+8.  Once created, go to your resource group view, search for virtual network
     resource
 
 ![](media/72f02ba5823edda0230bfbc68907aab4.png)
 
-1.  The Ethereum Consortium Blockchain creates 3 subnets for transaction node
+9.  The Ethereum Consortium Blockchain creates 3 subnets for transaction node
     and two mining nodes (suffix with -mn\#)
 
 ![](media/236c32a3abf1575bbf4b05b041fd855d.png)
 
-1.  Note the Transaction node subnet name, we will need it later
+10.  Note the Transaction node subnet name, we will need it later
 
-2.  Now go to resource group view and search for your transaction node machine,
+11.  Now go to resource group view and search for your transaction node machine,
     by default, transaction node machine has suffix of -tx\#.
 
 ![](media/1b58b10efb93f314b50feb156822686d.png)
 
-1.  Note its IP address, we will need it later.
+12.  Note its IP address, we will need it later.
 
 ![](media/df99a63d059171e51af38b4675109adf.png)
+
+13.  SSH to newly created Ethereum transaction node. We need to modify /home/<user>/start-private-blockchain.sh in order to add web3.js functions to geth when launching. Add high lighted part listed below to start-private-blockchain.sh then reboot transaction node machine
+
+nohup geth --datadir $GETH_HOME -verbosity $VERBOSITY --bootnodes $BOOTNODE_URLS --maxpeers $MAX_PEERS --nat none --networkid $NETWORK_ID --identity $IDENTITY $MINE_OPTIONS $FAST_SYNC --rpc --rpcaddr "$IPADDR" --rpccorsdomain "*" ***--rpcapi "eth,net,web3,admin,personal"*** >> $GETH_LOG_FILE_PATH 2>&1 &
 
 ### Create Truffle environment ###
 ==========================
@@ -152,25 +156,25 @@ Next Steps
 
 ![](media/e6b1157c4b284b7cc23b8b81a3a2276d.png)
 
-1.  To save cost, we change virtual machine size to A1 using HDD
+2.  To save cost, we change virtual machine size to A1 using HDD
 
 ![](media/1958987b1270baf2467aab2cf4fd77c8.png)
 
-1.  Create this VM in the virtual network and subnet where your transaction node
+3.  Create this VM in the virtual network and subnet where your transaction node
     resides in.
 
 ![](media/95f2d7fe1db34ba5ec318de2eec8eb70.png)
 
-1.  Accept terms and create the VM.
+4.  Accept terms and create the VM.
 
-2.  Once the truffle VM created successfully, use your favorite ssh tool to
+5.  Once the truffle VM created successfully, use your favorite ssh tool to
     connect to the VM.
 
-3.  Create a directory named app and switch to app folder
+6.  Create a directory named app and switch to app folder
 
 ![](media/ac901fc535e3587f6ef9503a2aecba4d.png)
 
-1.  Execute **truffle version** command to check truffle version. In general, you
+7.  Execute **truffle version** command to check truffle version. In general, you
     should have latest truffle installed. (as of when the document was created,
     latest version is v4.0.0).
 
@@ -179,7 +183,7 @@ Next Steps
 NOTE: In this document we will be using Truffle 4.0 which is installed by
 default
 
-1.  Initiate truffle project by executing below command
+8.  Initiate truffle project by executing below command
 
 ```sh
 truffle init
@@ -187,13 +191,13 @@ truffle init
 
 ![](media/b64fc4d93c6124820f0f50ae40de9e4c.png)
 
-1.  Edit truffle.js by running below command
+9.  Edit truffle.js by running below command
 
 ```
 sudo nano truffle.js
 ```
 
-1.  Update your truffle.js as below, specify your Transaction node IP address as host
+10.  Update your truffle.js as below, specify your Transaction node IP address as host
 
 ![](media/b6fbdf40741f6f2b57cb740ddffb1fd0.png)
 
